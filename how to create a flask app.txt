@@ -1,0 +1,11 @@
+how to create a flask app 
+step 1:- create a folder 
+step 2:- create a virtual environment 
+step 3:- initialize git hub on the folder 
+step 4:- create a .gitignore file add venv/ rule in it 
+step 5:- creation of package 
+	2A)create a "app" folder 
+		create a __init__.py file 
+	2B)create a blueprints folder 
+	2C)create a templates folder 
+	2D)create a models folder 

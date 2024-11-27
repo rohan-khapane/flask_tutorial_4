@@ -12,7 +12,8 @@ def homepage():
         # return f"home page username={username} password={password}"
         return render_template('/home_page.html',username=username,password=password,list=list)
     else:
-        return render_template('/static_page.html')
+        # return render_template('/static_page.html')
+        return "default page"
 
 # @bp.route('/about',methods=['GET','POST','PUT','DELETE'])
 # def about():
@@ -34,6 +35,7 @@ def homepage():
 #         print("other")
 #     return "about page"
 
-# @bp.route('/career')
-# def career():
-#     return "career page"
+@bp.route('/career')
+def career():
+    # return render_template('static_page.html')
+    return "default page"

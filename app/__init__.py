@@ -1,5 +1,6 @@
 from flask import Flask
-from app.blueprints import home_page,about
+from app.blueprints import home_page
+from app.blueprints import about
 
 app=Flask(__name__)
 

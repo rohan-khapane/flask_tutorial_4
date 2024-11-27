@@ -1,0 +1,11 @@
+{%extends "base.html"%}
+
+{%block title%}File upload{% endblock %}
+
+{%block content %}
+<h1>Upload Your File</h1>
+<form action="{{url_for('file_upload.file')}}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" required accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,text/plain"><br><br>
+    <button type="submit">Upload</button>
+</form>
+{% endblock %}

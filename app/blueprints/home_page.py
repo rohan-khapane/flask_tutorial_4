@@ -2,7 +2,7 @@ from flask import Flask,Blueprint,request,render_template
 
 bp=Blueprint("home_page",__name__) #home_page is the blueprint name we initilized the blueprint name
 
-@bp.route('/')
+@bp.route('/homepage/')
 def homepage():
     if 'username' in request.args.keys() and 'password' in request.args.keys() and 'list' in request.args.keys() :
         username=request.args['username']

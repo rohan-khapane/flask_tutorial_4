@@ -14,26 +14,26 @@ def homepage():
     else:
         return render_template('/static_page.html')
 
-@bp.route('/about',methods=['GET','POST','PUT','DELETE'])
-def about():
-    if request.method=='GET':
-        print("get")
-        return "get method"
+# @bp.route('/about',methods=['GET','POST','PUT','DELETE'])
+# def about():
+#     if request.method=='GET':
+#         print("get")
+#         return "get method"
 
-    elif request.method=='Post':
-        print("post")
-        return "post method"
+#     elif request.method=='Post':
+#         print("post")
+#         return "post method"
 
-    elif request.method=='PUT':
-        print("put")
-        return "put method"
-    elif request.method=='DELETE':
-        print("delete")
-        return "delete method"
-    else:
-        print("other")
-    return "about page"
+#     elif request.method=='PUT':
+#         print("put")
+#         return "put method"
+#     elif request.method=='DELETE':
+#         print("delete")
+#         return "delete method"
+#     else:
+#         print("other")
+#     return "about page"
 
-@bp.route('/career')
-def career():
-    return "career page"
+# @bp.route('/career')
+# def career():
+#     return "career page"

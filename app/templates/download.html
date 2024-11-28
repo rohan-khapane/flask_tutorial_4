@@ -2,5 +2,6 @@
 {% block title%}download page{% endblock%}
 {%block content%}
 <h1>Download page</h1>
+<!-- got the file form the python file using the jinja template and link tag redirecting the user back to the the download route and passing back the file name  -->
 <a href="{{ url_for('file_upload.download',filename=filename) }}">Download Files</a>
 {%endblock%}

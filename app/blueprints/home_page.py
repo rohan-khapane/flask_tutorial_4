@@ -15,6 +15,8 @@ def homepage():
         # return render_template('/static_page.html')
         return "default page"
 
+@bp.route('/homepage/file?')
+
 # @bp.route('/about',methods=['GET','POST','PUT','DELETE'])
 # def about():
 #     if request.method=='GET':

@@ -5,7 +5,12 @@
 {%block content %}
 <h1>Upload Your File</h1>
 <form action="{{url_for('file_upload.file')}}" method="post" enctype="multipart/form-data">
-    <input type="file" name="file" required accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,text/plain"><br><br>
+    <input type="file" name="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,text/plain"><br><br>
     <button type="submit">Upload</button>
+</form>
+
+<form action="{{url_for('file_upload.csv')}}"method="post" enctype="multipart/form-data">
+    <input type="file" name="file2" required accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel"><br><br>
+    <button type="submit">upload file to download</button>
 </form>
 {% endblock %}
